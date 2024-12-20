@@ -4,7 +4,7 @@ import { View, Text, StyleSheet } from 'react-native';
 export default function HomePage() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Welcome to the Travel Expense Tracker!</Text>
+      <Text style={styles.text}>Welcome to the Home Page!</Text>
     </View>
   );
 }
