@@ -10,7 +10,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
       "infoPlist": {
@@ -19,13 +21,25 @@
       }
     },
     "android": {
-      "permissions": ["CAMERA", "ACCESS_FINE_LOCATION"],
+      "permissions": [
+        "CAMERA",
+        "ACCESS_FINE_LOCATION"
+      ],
       "package": "com.example.travelexpensetracker",
-      "versionCode": 1
+      "versionCode": 2,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "description": "A travel expense tracker with camera and location features."
+    "description": "A travel expense tracker with camera and location features.",
+    "extra": {
+      "eas": {
+        "projectId": "ea689c99-51e4-4c87-8579-7e909b433c60"
+      }
+    }
   }
 }

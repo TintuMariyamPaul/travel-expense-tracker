@@ -16,8 +16,12 @@ export default function CameraPage() {
 
   const takePicture = async () => {
     if (cameraRef && isCameraReady) {
-      const photo = await cameraRef.takePictureAsync();
-      console.log('Photo taken:', photo.uri);
+      try {
+        const photo = await cameraRef.takePictureAsync();
+        console.log('Photo taken:', photo.uri);
+      } catch (error) {
+        console.error('Error taking picture:', error);
+      }
     }
   };
 
